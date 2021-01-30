@@ -1,11 +1,11 @@
 {
-  "name": "modtemplate",
-  "displayName": "Template",
-  "author": "[#8738ff[]]Sonnicon[[]]",
-  "description": "Gradle jar Mindustry mod template",
-  "version": "0",
-  "main": "sonnicon.modtemplate.ModTemplate",
-  "minGameVersion": "105",
+  "name": "thanosdustry",
+  "displayName": "Thanosdustry",
+  "author": "[#681996[]]Farmer Thanos[[]]",
+  "description": "A general stuff mod with things from Titan.",
+  "version": "0.1",
+  "main": "farmerthanos.thanosdustry.Thanosdustry",
+  "minGameVersion": "123",
   "dependencies": [],
   "hidden": false
 }
