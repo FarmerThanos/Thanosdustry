@@ -1,8 +1,9 @@
 package farmerthanos.thanosdustry;
 
 import arc.util.Log;
-import farmerthanos.thanosdustry.content.TBlocks;
-import farmerthanos.thanosdustry.content.TItems;
+import farmerthanos.thanosdustry.content.ThBlocks;
+import farmerthanos.thanosdustry.content.ThItems;
+import farmerthanos.thanosdustry.content.ThUnits;
 import mindustry.mod.Mod;
 
 public class Thanosdustry extends Mod{
@@ -15,8 +16,9 @@ public class Thanosdustry extends Mod{
     public void loadContent(){
         Log.info("Loading Thanosdustry content");
 
-        new TBlocks().load();
-        new TItems().load();
+        new ThBlocks().load();
+        new ThItems().load();
+        new ThUnits().load();
 
         Log.info("Loaded Thanosdustry content");
     }
