@@ -23,8 +23,8 @@ public class ThUnits implements ContentList {
 
         bit = new UnitType("bit") {{
             flying = true;
-            speed = 2f;
-            accel = 0.1f;
+            speed = 3.25f;
+            accel = 0.15f;
             drag = 0.02f;
             hitSize = 4f;
             health = 50;
@@ -35,25 +35,27 @@ public class ThUnits implements ContentList {
             circleTarget = false;
             ammoType = AmmoTypes.power;
 
+            engineSize = 2f;
+            engineOffset = 5f;
 
             weapons.add(new Weapon() {{
                 y = 0f;
-                x = 0f;
-                reload = 13f;
+                x = 2f;
+                reload = 20f;
                 ejectEffect = Fx.none;
                 bullet = new BasicBulletType(3.0f, 3) {{
-                    alternate = false;
-                    width = 4f;
+                    alternate = true;
+                    width = 5f;
                     height = 7f;
                     lifetime = 64f;
                     shootEffect = Fx.shootSmall;
                     smokeEffect = Fx.none;
                     ammoMultiplier = 2;
-                    backColor = Pal.bulletYellowBack;
-                    frontColor = Pal.bulletYellow;
+                    backColor = Pal.sapBulletBack;
+                    frontColor = Pal.sapBullet;
                     hittable = true;
                 }};
-                shootSound = Sounds.pew_;
+                shootSound = ThSounds.bitPew;
             }});
             constructor = UnitEntity::create;
         }};
