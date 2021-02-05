@@ -24,30 +24,31 @@ public class ThUnits implements ContentList {
         bit = new UnitType("bit") {{
             flying = true;
             speed = 3.25f;
-            accel = 0.15f;
-            drag = 0.02f;
+            accel = 0.2f;
+            drag = 0.03f;
             hitSize = 4f;
             health = 50;
             engineOffset = 5f;
             engineSize = 0.1f;
             targetAir = true;
-            commandLimit = 12;
+            commandLimit = 8;
             circleTarget = false;
+            rotateSpeed = 4f;
             ammoType = AmmoTypes.power;
 
             engineSize = 2f;
-            engineOffset = 5f;
+            engineOffset = 4f;
 
             weapons.add(new Weapon() {{
                 y = 0f;
                 x = 2f;
                 reload = 20f;
                 ejectEffect = Fx.none;
-                bullet = new BasicBulletType(3.0f, 3) {{
+                bullet = new BasicBulletType(3.0f, 12) {{
                     alternate = true;
                     width = 5f;
                     height = 7f;
-                    lifetime = 64f;
+                    lifetime = 45f;
                     shootEffect = Fx.shootSmall;
                     smokeEffect = Fx.none;
                     ammoMultiplier = 2;
